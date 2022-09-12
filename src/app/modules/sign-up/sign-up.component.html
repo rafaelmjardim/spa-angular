@@ -7,36 +7,38 @@
 
         <div class="sign_box_main">
             
-            <form class="sign_box_main_form">
+            <form class="sign_box_main_form" [formGroup]="signForm">
                 <p>
                     <mat-form-field class="sign_box_main_form_input" appearance="outline">
                         <mat-label>Name</mat-label>
-                        <input matInput placeholder="Enter You Name">
+                        <input matInput placeholder="Enter You Name" formControlName="nameInput">
                     </mat-form-field>
                 </p>
                 <p>
                     <mat-form-field class="sign_box_main_form_input" appearance="outline">
                         <mat-label>Mobile Number</mat-label>
-                        <input matInput placeholder="Enter You Mobile Number">
+                        <input matInput placeholder="Enter You Mobile Number" formControlName="mobileNumberInput">
                     </mat-form-field>
                 </p>
                 <p>
                     <mat-form-field class="sign_box_main_form_input" appearance="outline">
                         <mat-label>Email</mat-label>
-                        <input matInput placeholder="Please Enter Your Email">
+                        <input matInput placeholder="Please Enter Your Email" formControlName="emailInput">
                     </mat-form-field>
                 </p>
                 
                 <p>
                     <mat-form-field class="sign_box_main_form_input" appearance="outline">
                         <mat-label>Password</mat-label>
-                        <input matInput placeholder="Please Enter Your Password">
+                        <input matInput placeholder="Please Enter Your Password" formControlName="passwordInput">
                     </mat-form-field>
                 </p>
             </form>
 
-            <button class="sign_box_main_button">Sign-up</button>
+            <button class="sign_box_main_button" (click)="handleClick()">Sign-up</button>
             
+            <p *ngIf="newUser"> Nome: {{ newUser.name }}</p>
+            <p *ngIf="newUser"> Número: {{ newUser.number }}</p>
         </div>
     </div>
 </div>
