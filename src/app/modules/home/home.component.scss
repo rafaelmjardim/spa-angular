@@ -1,0 +1,61 @@
+.home {
+    padding: 0 10rem;
+    display: flex;
+    align-items: center;
+    height: 85vh;
+    
+    @media screen and (max-width: 760px){
+        padding: 3rem;
+    }
+
+    &_main {
+
+        &_tittle {
+            margin-top: 5rem;
+            width: 70.4rem;
+            font-size: 6rem;
+            line-height: 6.5rem;
+            color: #303030;
+        }
+
+        &_txt {
+            width: 60rem;
+            font-size: 1.8rem;
+            margin-top: 2rem;
+            color: #6C6C6C;
+        }
+
+        &_btn {
+            margin-top: 9rem;
+            width: 24rem;
+            height: 6.8rem;
+            font-size: 2.2rem;
+            font-weight: bold;
+            background: linear-gradient(90deg, rgba(174, 89, 196, 0.5) 0.62%, rgba(109, 236, 205, 0.38) 51.8%, rgba(219, 255, 0, 0.325) 94.73%);
+            border-radius: 2.4rem;
+            border: 5px solid #fff;
+            box-shadow: 0px 20px 35px rgba(63, 26, 75, 0.14);
+            cursor: pointer;
+            top: 0;
+            position: relative;
+            transition: top ease 0.3s;
+
+            &:hover {
+                box-shadow: 0px 20px 35px rgba(156, 73, 183, 0.379);
+                top: -6px;
+            }
+        }
+    }
+    
+    &_img {
+        margin-top: 5rem;
+        min-width: 50rem;
+    }
+}
+@media screen and (max-width: 780px) {
+    .home {
+        flex-wrap: wrap;
+        
+    }
+    
+}

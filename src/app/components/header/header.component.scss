@@ -1,0 +1,74 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8rem;
+    height: 10vh;
+
+    &_logo img {
+        min-width: 12.5rem;
+     
+    }
+
+    &_menu {
+        display: flex;
+        &_item {
+            margin:30px;
+            font-size: 2rem;
+            white-space: nowrap;
+           
+            &_link {
+                
+                &:hover {
+                    background: linear-gradient(90deg, #e46bffda 9.28%, #4883f8e1 98.97%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                    transition: background s linear;
+                }
+            }
+        }
+    }
+    &_actions {
+        display: flex;
+        
+        .button {
+            width: 11.5rem;
+            height: 4.5rem;
+            font-size: 2rem;
+            border-radius: 1.5rem;
+            border: 0.1rem solid #000;
+            cursor: pointer;
+
+            &:hover {
+                // background-color: #c2a5f5;
+                background: linear-gradient(90deg, #ea8aff65 9.28%, #6291f084 98.97%);
+                transition: background 0.2s;
+                border: 0.1rem solid #ca93c3;
+                color: #303030;
+            }
+        }
+
+        &_sign {           
+            background-color: transparent;
+            
+           
+        }
+
+        &_login {
+            border: none;
+            background-color: #000;
+            color: #fff;
+            margin-left: 4rem;
+
+            
+        }
+    }
+}
+@media screen and (max-width: 780px) {
+    .header {
+        &_menu {
+            display: none;
+        }
+    }
+}
