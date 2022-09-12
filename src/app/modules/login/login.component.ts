@@ -3,7 +3,8 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 
 type NewUser = {
   nome: string,
-  password: string
+  password: string,
+  age: number
 }
 
 @Component({
@@ -22,7 +23,8 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
     this.loginForm = this.form_builder.group({
       nameInput: [''],
-      passwordInput: ['']
+      passwordInput: [''],
+      ageInput: ['']
     })
 
   }
@@ -30,13 +32,17 @@ export class LoginComponent implements OnInit {
   handleClick = () => {
     const nameInput = this.loginForm.controls['nameInput'].value;
     const passwordInput = this.loginForm.controls['passwordInput'].value;
+    const ageInput = this.loginForm.controls['ageInput'].value;
 
     this.newUser = {
       nome: nameInput,
-      password: passwordInput
+      password: passwordInput,
+      age: ageInput
     }
 
     console.log("Usuario", this.newUser);
+
+    alert(`Nome: ${this.newUser.nome} | Idade: ${ this.newUser.age} `)
   }
 
 }
