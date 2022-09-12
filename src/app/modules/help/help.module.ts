@@ -10,6 +10,9 @@ import { MatCardModule } from "@angular/material/card";
 import { MatChipsModule } from "@angular/material/chips";
 import { MatIconModule } from "@angular/material/icon";
 
+import { ReactiveFormsModule } from '@angular/forms';
+
+
 
 @NgModule({
   declarations: [
@@ -22,7 +25,8 @@ import { MatIconModule } from "@angular/material/icon";
     MatButtonModule,
     MatCardModule,
     MatChipsModule,
-    MatIconModule
+    MatIconModule,
+    ReactiveFormsModule
   ]
 })
 export class HelpModule { }

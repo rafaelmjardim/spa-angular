@@ -1,0 +1,35 @@
+<div class="login">
+    <div class="login_box">
+        
+        <div class="login_box_header">
+            <h1 class="login_box_header_title">LOGIN</h1>
+        </div>
+
+        <div class="login_box_main">
+            
+            <form class="login_box_main_form" [formGroup]="loginForm">
+                <p>
+                    <mat-form-field class="login_box_main_form_input" appearance="outline">
+                        <mat-label>Name</mat-label>
+                        <input matInput placeholder="Enter You Name" formControlName="nameInput">
+                    </mat-form-field>
+                </p>
+                
+                <p>
+                    <mat-form-field class="login_box_main_form_input" appearance="outline">
+                        <mat-label>Password</mat-label>
+                        <input matInput placeholder="Please Enter Your Password" formControlName="passwordInput">
+                    </mat-form-field>
+                </p>
+            </form>
+
+            <p class="login_box_main_txt">
+                If you havn't Registered wet? 
+                <a routerLink="/signup" class="login_box_main_txt_link">Register Now</a>
+            </p>
+
+            <button class="login_box_main_button" (click)="handleClick()">Login</button>
+        </div>
+            
+    </div>
+</div>

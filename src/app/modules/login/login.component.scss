@@ -1,4 +1,4 @@
-.sign {
+.login {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -34,6 +34,16 @@
                 &_input {
                     font-size: 1.8rem;
                     width: 30rem;
+                }
+            }
+
+            &_txt {
+                font-size: 1.2rem;
+                margin: 2rem;
+                color: #808080;
+
+                &_link {
+                    color: #996ed1;
                 }
             }
 

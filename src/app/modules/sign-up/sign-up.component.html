@@ -36,9 +36,13 @@
             </form>
 
             <button class="sign_box_main_button" (click)="handleClick()">Sign-up</button>
-            
-            <p *ngIf="newUser"> Nome: {{ newUser.name }}</p>
-            <p *ngIf="newUser"> Número: {{ newUser.number }}</p>
         </div>
+            
+    </div>
+    <div class="sign_result">
+        <p *ngIf="newUser"> Nome: {{ newUser.name }}</p>
+        <p *ngIf="newUser"> Número: {{ newUser.number }}</p>
+        <p *ngIf="newUser"> Email: {{ newUser.email }}</p>
+        <p *ngIf="newUser"> Senha: {{ newUser.password }}</p>
     </div>
 </div>
