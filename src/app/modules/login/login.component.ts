@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 
 type NewUser = {
-  nome: string,
+  name: string,
   password: string,
   age: number
 }
@@ -35,14 +35,14 @@ export class LoginComponent implements OnInit {
     const ageInput = this.loginForm.controls['ageInput'].value;
 
     this.newUser = {
-      nome: nameInput,
+      name: nameInput,
       password: passwordInput,
       age: ageInput
     }
 
     console.log("Usuario", this.newUser);
 
-    alert(`Nome: ${this.newUser.nome} | Idade: ${ this.newUser.age} `)
+    alert(`Nome: ${this.newUser.name} | Idade: ${ this.newUser.age} `)
   }
 
 }
