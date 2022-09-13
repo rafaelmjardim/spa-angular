@@ -32,35 +32,47 @@
 
     <div class="blog_content">
 
-        <h2 class="blog_content_txt">Menu</h2>
-        
-        <button mat-button [matMenuTriggerFor]="menu">Menu</button>
-        <mat-menu #menu="matMenu">
-            <button mat-menu-item>Teste</button>
-            <button mat-menu-item disabled>Teste</button>
-        </mat-menu>
+        <h2 class="blog_content_txt">Components</h2>
 
-        <button mat-icon-button [matMenuTriggerFor]="menu2">
-        <mat-icon>more_vert</mat-icon>
-        </button>
-        <mat-menu #menu2="matMenu">
-            <button mat-menu-item>Item</button>
-            <button mat-menu-item>Item 2</button>
-            <button mat-menu-item>
-                <mat-icon>more</mat-icon>
-                Item Icon
-            </button>
-        </mat-menu>
+        <div class="blog_content_components">
+            <span>
+                
+                <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+                
+                <mat-menu #menu="matMenu">
+                    <button mat-menu-item>Teste</button>
+                    <button mat-menu-item disabled>Teste</button>
+                </mat-menu>
 
+                <button mat-icon-button [matMenuTriggerFor]="menu2">
+                    <mat-icon>more_vert</mat-icon>
+                </button>
+                
+                <mat-menu #menu2="matMenu">
+                    <button mat-menu-item>Item</button>
+                    <button mat-menu-item>Item 2</button>
+                    <button mat-menu-item>
+                        <mat-icon>more</mat-icon>
+                        Item Icon
+                    </button>
+                </mat-menu>
+            </span>
+
+            <span>
+                <h2>Radios Button</h2>
+
+                <mat-radio-group aria-label="Select an option">
+                    <mat-radio-button value="1">Option 1</mat-radio-button>
+                    <mat-radio-button value="2">Option 2</mat-radio-button>
+                </mat-radio-group>
+            </span>
+
+            <span>
+                <h2>Tooltip</h2>
+
+                <button mat-raised-button matTooltip="Show">Hidden</button>
+            </span>
+        </div>
+ 
     </div>
-
-    <div class="blog_content">
-        <h2 class="blog_content_txt">Radios Button</h2>
-
-        <mat-radio-group aria-label="Select an option">
-            <mat-radio-button value="1">Option 1</mat-radio-button>
-            <mat-radio-button value="2">Option 1</mat-radio-button>
-        </mat-radio-group>
-    </div>
-
 </div>

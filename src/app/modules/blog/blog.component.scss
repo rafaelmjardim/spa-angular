@@ -13,6 +13,18 @@
         &_txt {
             margin: 1.5rem;
         }
+
+        &_components {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: start;
+            gap: 10rem;
+            border-radius: 0.2rem;
+            min-height: 18rem;
+            height: auto;
+            padding: 1rem;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
     }
 }
 
