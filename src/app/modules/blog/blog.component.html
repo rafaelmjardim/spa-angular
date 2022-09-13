@@ -1,3 +1,26 @@
 <div class="blog">
-    <!-- Criar tabela aqui -->
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+        <ng-container matColumnDef="position">
+            <th mat-header-cell *matHeaderCellDef> No. </th>
+            <td mat-cell *matCellDef="let item"> {{ item.position }}</td>
+        </ng-container>
+        
+        <ng-container matColumnDef="name">
+            <th mat-header-cell *matHeaderCellDef> Name </th>
+            <td mat-cell *matCellDef="let item"> {{ item.name }}</td>
+        </ng-container>
+        
+        <ng-container matColumnDef="age">
+            <th mat-header-cell *matHeaderCellDef> Age </th>
+            <td mat-cell *matCellDef="let item"> {{ item.age }}</td>
+        </ng-container>
+        
+        <ng-container matColumnDef="job">
+            <th mat-header-cell *matHeaderCellDef> Job </th>
+            <td mat-cell *matCellDef="let item"> {{ item.job }}</td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
 </div>
