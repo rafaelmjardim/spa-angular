@@ -1,9 +1,33 @@
 .blog {
     padding: 10rem;
     color: #353535;
+
+    &_content {
+        margin-top: 4rem;
+        
+
+        &:first-child {
+            margin-top: 0;
+        }
+
+        &_txt {
+            margin: 1.5rem;
+        }
+    }
 }
 
 // A tablea precisa de uma largura definida (normalmente 100%)
 table {
     width: 100%;
 }
+
+// button {
+//     border: none;
+//     background: none;
+//     cursor: pointer;
+//     font-size: 2rem;
+
+//     &:hover {
+//         color: blueviolet;
+//     }
+// }

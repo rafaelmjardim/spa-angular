@@ -5,6 +5,10 @@ import { BlogRoutingModule } from './blog-routing.module';
 import { BlogComponent } from './blog.component';
 
 import { MatTableModule } from "@angular/material/table";
+import { MatMenuModule } from "@angular/material/menu";
+import { MatIconModule } from "@angular/material/icon";
+import { MatButtonModule } from "@angular/material/button";
+import { MatRadioModule } from "@angular/material/radio";
 
 
 @NgModule({
@@ -14,7 +18,11 @@ import { MatTableModule } from "@angular/material/table";
   imports: [
     CommonModule,
     BlogRoutingModule,
-    MatTableModule
+    MatTableModule,
+    MatMenuModule,
+    MatIconModule,
+    MatButtonModule,
+    MatRadioModule
   ]
 })
 export class BlogModule { }
