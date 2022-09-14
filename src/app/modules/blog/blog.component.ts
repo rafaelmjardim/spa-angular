@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from "@angular/material/dialog";
 
 // PeriodicElement Type
 type ClientList = {
@@ -28,9 +29,19 @@ export class BlogComponent implements OnInit {
   //dataSource = nome do arrayList
   dataSource = CLIENT_DATA;
 
-  constructor() { }
+  constructor(public dialog: MatDialog) { }
 
   ngOnInit(): void {
   }
 
+  openDialog = () => {
+    this.dialog.open(DialogElementsExampleDialog);
+  }
+  
 }
+
+@Component({
+  selector: 'dialog-elements-example-dialog',
+  templateUrl: 'dialog-elements-example-dialog.html',
+})
+export class DialogElementsExampleDialog {}
