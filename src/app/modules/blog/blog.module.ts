@@ -10,8 +10,9 @@ import { MatIconModule } from "@angular/material/icon";
 import { MatButtonModule } from "@angular/material/button";
 import { MatRadioModule } from "@angular/material/radio";
 import { MatTooltipModule } from "@angular/material/tooltip";
-
-
+import { MatTabsModule } from "@angular/material/tabs";
+import { MatFormFieldModule } from "@angular/material/form-field";
+import { MatDialogModule } from "@angular/material/dialog";
 @NgModule({
   declarations: [
     BlogComponent
@@ -24,7 +25,10 @@ import { MatTooltipModule } from "@angular/material/tooltip";
     MatIconModule,
     MatButtonModule,
     MatRadioModule,
-    MatTooltipModule
+    MatTooltipModule,
+    MatTabsModule,
+    MatFormFieldModule,
+    MatDialogModule
   ]
 })
 export class BlogModule { }
