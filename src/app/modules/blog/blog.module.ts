@@ -13,9 +13,13 @@ import { MatTooltipModule } from "@angular/material/tooltip";
 import { MatTabsModule } from "@angular/material/tabs";
 import { MatFormFieldModule } from "@angular/material/form-field";
 import { MatDialogModule } from "@angular/material/dialog";
+
+import { BlogDialogComponent } from './blog-dialog/blog-dialog.component';
+
 @NgModule({
   declarations: [
-    BlogComponent
+    BlogComponent,
+    BlogDialogComponent
   ],
   imports: [
     CommonModule,
